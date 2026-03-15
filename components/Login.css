@@ -1,0 +1,109 @@
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  font-family: Arial, sans-serif;
+}
+
+
+.login-box {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+
+.login-title {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #f6a623;
+}
+
+
+.form-check-label {
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+
+button.login-box.button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f6a623;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.login-box.button:hover:enabled {
+  background-color: #e59419;
+}
+
+button.login-box.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+input[type="email"].error-input,
+input[type="password"].error-input {
+  border-color: #e74c3c;
+}
+
+
+.error {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #f6a623; 
+}
+
+
+@media (max-width: 480px) {
+  .login-box {
+    padding: 30px 20px;
+  }
+
+  .login-title {
+    font-size: 24px;
+  }
+}
