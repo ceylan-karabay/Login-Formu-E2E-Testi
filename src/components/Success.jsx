@@ -8,7 +8,7 @@ export default function Success() {
       <h1>Giriş Başarılı 🎉</h1>
       <p>Hoş geldiniz! Giriş işleminiz başarıyla tamamlandı.</p>
 
-    <button className='succes-btn' onClick={() => navigate("/")}>Sign Up</button>
+    <button className='success-btn' onClick={() => navigate("/")}>Sign Up</button>
     </div>
     </div>
   );

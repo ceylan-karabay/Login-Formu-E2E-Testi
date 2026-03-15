@@ -55,7 +55,7 @@ input[type="password"]:focus {
 }
 
 
-button.login-box.button {
+.login-btn {
   width: 100%;
   padding: 12px;
   background-color: #f6a623;
@@ -68,11 +68,34 @@ button.login-box.button {
   transition: background-color 0.3s;
 }
 
-button.login-box.button:hover:enabled {
+.login-btn:hover:enabled {
   background-color: #e59419;
 }
 
-button.login-box.button:disabled {
+.login-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #f6a623;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-btn:enabled {
+  background-color: #e59419;
+}
+
+.register-btn:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }

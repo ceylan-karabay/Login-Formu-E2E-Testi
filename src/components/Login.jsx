@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import "./Login.css";
@@ -138,17 +137,24 @@ export default function Login() {
           </FormGroup>
 
           <FormGroup>
-            <Button className='login-box button' disabled={!form.terms}>
-              Giriş Yap
-            </Button>
-          </FormGroup>
-          <Button
-            className='login-box button'
-             disabled={!form.terms || errors.email || errors.password}
-             onClick={handlePost}
->
-             Kayıt Ol
-          </Button>
+        <Button
+        className="login-btn"
+        type="submit"
+        disabled={!form.terms || errors.email || errors.password}
+        >
+       Giriş Yap
+      </Button>
+       </FormGroup>
+        <FormGroup>
+       <Button
+       className="register-btn"
+       type="button"
+        disabled={!form.terms || errors.email || errors.password}
+       onClick={handlePost}
+       >
+       Kayıt Ol
+      </Button>
+        </FormGroup>
         </Form>
       </div>
     </div>
